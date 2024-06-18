@@ -28,7 +28,7 @@ steps:
     timeoutInSeconds: 1200
     name: "Build container image"
     command: |
-      docker build -t composer-app  .
+      docker build --network host -t composer-app  .
 outputArtifacts:
  - name: composer-app
    type: DOCKER_IMAGE
