@@ -2,7 +2,7 @@ FROM ubuntu:20.04
 
 RUN apt-get update
 
-RUN apt-get install -y curl php
+RUN apt-get install -y php php-curl
 
 RUN curl google.com
 
