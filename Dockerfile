@@ -1,8 +1,8 @@
-FROM ubuntu:latest
+FROM ubuntu:20.04
 
-RUN apt install -y curl
+RUN apt-get install -y curl
 
-RUN apt update
+RUN apt-get update
 
 RUN curl google.com
 
